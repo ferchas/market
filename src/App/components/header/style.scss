@@ -1,0 +1,28 @@
+$primaryColor: #585F69;
+
+header {
+  height: 64px;
+  background-color: $primaryColor;
+  
+  &__menu {
+    padding: 30px 24px;
+    display: inline-block;
+  }
+
+  &__title {
+    text-align: center;
+    display: inline-block;
+  }
+
+  &__acction {
+    text-align: right;
+    display: inline-block;
+
+    &--icon {
+      width: 24px;
+      height: 24px;
+    }
+
+  }
+
+}
