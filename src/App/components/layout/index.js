@@ -5,7 +5,7 @@ import Header from '../header';
 import './style.scss';
 
 const Layout = (props) => (
-  <div className='layout__wrapp'>
+  <div className='layout-wrapp'>
     <Header />
     {props.children}
   </div>

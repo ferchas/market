@@ -1,13 +1,15 @@
 import React from 'react';
 
 import Layout from '../../components/layout';
+import Search from '../../components/search';
 
 import './style.scss';
 
 const Home = () => (
   <Layout>
-    <div className='main-content'>
-      Container
+    <div className='home-content'>
+      <Search />
+      
     </div>
   </Layout>
 )

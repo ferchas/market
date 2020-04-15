@@ -1,0 +1,41 @@
+@import '../layout/variables';
+
+.search-wp {
+  height: 60px;
+  background-color: $greay_100;
+
+  &__imput {
+    border: 2px solid $greay_401;
+    border-radius: 4px;
+    margin: 8px 16px;
+    position: relative;
+    padding: 0 8px;
+    background-color: $white_100;
+
+    &--text {
+      border: none;
+      height: 40px;
+      width: 100%;
+      padding: 0;
+
+      &::placeholder {
+        color: $greay_401;
+        font-size: 16px;
+        font-weight: 100;
+        padding: 8px;
+      }
+
+      &::focus  {
+        border: 0;
+        box-shadow: none;
+      }
+    }
+
+    &--icon {
+      position: absolute;
+      right: 0;
+      margin: 8px;
+    }
+  }
+
+}
