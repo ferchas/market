@@ -22,7 +22,6 @@ coverage
 .lock-wscript
 
 # Compiled 
-public
 
 # Dependency directories
 node_modules/
