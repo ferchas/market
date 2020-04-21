@@ -1,14 +1,14 @@
 import React from 'react';
 
 import Layout from '../../components/layout';
-import Search from '../../components/search';
+import SearchBox from '../../components/searchBox';
 
 import './style.scss';
 
 const Home = () => (
   <Layout>
     <div className='home-content'>
-      <Search />
+      <SearchBox />
       
     </div>
   </Layout>

@@ -1,0 +1,16 @@
+@import '../layout/variables';
+
+.bredcrumbs-container {
+  
+  &__links-wp {
+      margin: 0;
+
+    &--link {
+      display: inline-block;
+
+      &[data-value="activated"] {
+        color: $blue_200;
+      }
+    }
+  }
+}

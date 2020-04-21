@@ -2,7 +2,7 @@ import React from 'react';
 
 import './style.scss'
 
-const Search = () => {
+const SearchBox = () => {
   return (
     <section className="search-wp">
       <div className="search-wp__imput">
@@ -14,4 +14,4 @@ const Search = () => {
   )
 };
 
-export default Search;
+export default SearchBox;
