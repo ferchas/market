@@ -1,0 +1,19 @@
+@import '../layout/variables';
+
+.filtro-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -19px;
+    margin-right: 16px;
+
+  
+  &__links-wp {
+      color: $greay_555;
+      margin: 0;
+
+    &--link {
+      display: inline-flex;
+           
+    }
+  }
+}
