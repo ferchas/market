@@ -3,8 +3,10 @@ import React from 'react';
 import Layout from '../../components/layout';
 import SearchBox from '../../components/searchBox';
 import Breadcrumbs from '../../components/breadcrumbs';
-import Filtro from '../../components/filtro';
+import Filter from '../../components/filter';
 import Items from '../../components/items'
+
+const listItems = [{},{},{},{}]
 
 const Search = () => {
   return (
@@ -12,10 +14,9 @@ const Search = () => {
       <div className="search-container">
         <SearchBox />
         <Breadcrumbs />
-        <Filtro />
-         <Items />
-
-     
+        <Filter />
+        <Items list={listItems} />
+   
       </div>
     </Layout>
   );  

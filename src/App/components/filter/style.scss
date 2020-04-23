@@ -1,6 +1,6 @@
 @import '../layout/variables';
 
-.filtro-container {
+.filter-container {
     display: flex;
     justify-content: flex-end;
     margin-top: -19px;
@@ -8,12 +8,14 @@
 
   
   &__links-wp {
-      color: $greay_555;
+      color: $grey_555;
       margin: 0;
 
     &--link {
       display: inline-flex;
            
     }
+  
   }
+
 }

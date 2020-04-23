@@ -2,10 +2,10 @@
 
 .search-wp {
   height: 60px;
-  background-color: $greay_100;
+  background-color: $grey_100;
 
   &__imput {
-    border: 2px solid $greay_401;
+    border: 2px solid $grey_401;
     border-radius: 4px;
     margin: 8px 16px;
     position: relative;
@@ -19,7 +19,7 @@
       padding: 0;
 
       &::placeholder {
-        color: $greay_401;
+        color: $grey_401;
         font-size: 16px;
         font-weight: 100;
         padding: 8px;
