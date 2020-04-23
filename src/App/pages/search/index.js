@@ -14,7 +14,6 @@ const Search = () => {
         <Breadcrumbs />
         <Filtro />
          <Items />
-         <Items />
 
      
       </div>
