@@ -2,7 +2,7 @@
 
 .items-conteiner { 
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
     margin: 19px 0 0 0 ;
     flex-direction: row;
@@ -15,11 +15,13 @@
         width: 180px;
         min-height: 210px;
         position: relative;
-        padding: 0 8px 0 0;
+        padding: 0 0 9px 0;
         border: 1px solid;
         border-color: $grey_101;
         border-radius: 10px;
         box-sizing: border-box;
+        margin: 0 0 26px 0;
+        background-color: $white_100;
         
       
         &--icon{
@@ -37,10 +39,13 @@
             }
         }
 
-        &__img-wp{
+        &__img-box{
+            padding: 9px 9px;
 
-            &-el{
-
+            &--src{
+                background-color: $white_100;
+                width: 159px;
+                height: 127px;
             }
         }
      
