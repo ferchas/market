@@ -1,0 +1,263 @@
+@import '../layout/variables';
+
+.item-conteiner {
+    margin: 7px 0 0 0;
+    padding: 0 0 0 21px;
+    background-color: $white_100;
+    
+    .slaider-conteiner{
+        display: flex;
+        align-items: center;
+        width: 320px;
+        height: 250px;
+        position: relative;
+        overflow: hidden;
+
+        &__img{
+            width: 100%;
+            object-fit: contain;
+               
+        }
+
+        &__img--info{
+         display: inline-block;
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         background-color: $grey_801;
+         width: 64px;
+         height: 32px;
+         color: $grey_600;
+         text-align: center;
+         border: 1px solid $grey_441;
+         border-radius: 5px;
+         font-size: 14px;
+         box-sizing: border-box;
+         padding: 7px 0 0 0 ;
+         
+
+        }
+          
+    }
+    
+    .items-content {
+        
+        &__title{
+            font-size: 28px;
+            font-weight: 400;
+            padding: 0;
+            margin: 18px 4px 9px 0;
+        }
+
+        &__rating {
+            &:hover{
+                background-color: gold;
+            }
+
+        }
+
+        &__price{
+            margin: 10px 0 40px 0;
+            display: flex;
+            flex-direction: row;
+
+            &--titel{
+                margin: 0;
+                padding: 0;
+                font-size: 44px;
+                font-weight: 400;
+                
+            }
+            
+            &--state{
+                font-size: 14px;
+                color: $grey_600;
+                align-self: flex-end;
+                padding: 0 0 8px 8px;
+            }
+        }
+
+        .label-amont{
+            font-size: 14px;
+            color: $grey_600;
+            &--int{
+
+                margin: 0 0 0 11px;
+                width: 56px;
+                height: 24px;
+                box-sizing: border-box;
+            }
+        }
+
+        .label-color{
+            padding: 0 0 0 24px;
+            font-size: 14px;
+            color: $grey_600;
+            
+            &--int{
+                margin: 0 0 0 15px;
+                padding: 0;
+                border: 1px solid grey_202;
+                border-radius: 2px;
+                box-sizing: border-box;
+                outline: none;
+                }
+
+        }
+
+        .media-conteiner {
+            
+              &__title{
+                font-size: 16px;
+                font-weight: 400;
+                color: $grey_600;
+                margin: 19px 0 11px 32px;
+            }
+
+            &__cards{
+                position: relative;
+                width: 216px;
+                height: 61px;
+
+                &--pocket{
+                    position: absolute;
+                    top: 9.83px;
+                    left: 3px;
+                    right: 196.09px;
+                    bottom: 32.5px;
+                }
+
+                &---el1{
+                    position: absolute;                    
+                    padding: 0 0 0 30px;
+                    top: 26.1px;
+                    left: 32px;
+                    right: 133px;
+                    bottom: 18.32px;
+                }
+
+                
+
+                &---el2{
+                    position: absolute;                    
+                    top: 23.1px;
+                    left: 96.5px;
+                    right: 89.5px;
+                    bottom: 14.51px;
+
+                }
+
+                &---el3{
+                    position: absolute;                    
+                    top: 24px;
+                    left: 140px;
+                    right: 52px;
+                    bottom: 13px;
+
+                }
+
+                &__footer{
+                    color: rgb(128, 142, 155);
+                    font-size: 9px;
+                    text-decoration: underline;
+                    padding: 0;
+                    margin: -10px 0 0 0;
+                }
+
+            }
+                
+
+        }  
+          
+
+            .delive-wrapper{
+                display: flex;
+                flex-direction: row;
+                justify-content: start;
+                margin: 28px 0 0 0;
+
+                &-icon {
+                    margin: 0 0 0 0 ;
+                    padding: 0 11px 0 0;
+
+                }
+
+                &-text {
+                    margin:0 0 0 0 ;
+                    font-size: 14px;
+                    }
+
+                }
+            
+            .input-reservar{
+                width: 296.11px;
+                height: 40px;
+                background-color: #2D333A;
+                margin: 26px 15px;
+                border-radius: 5px;
+                font-size: 20px;
+                color: #fff;
+                padding: 8px 0 8px 0;
+                box-sizing: border-box;
+                
+
+            }
+
+            .caracteristicas-wrapper{
+                width: 232px;
+                height: 151px;
+                position: relative;
+                margin: 10px 0 0 0;
+
+
+                &--header{
+                    color: #505050;
+                    font-size: 18px;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                    padding: 0;
+                }
+
+            }
+
+
+            .descripcion-wrapper{
+                width: 327px;
+                height: 193px;
+
+                &--header{
+                    color: #505050;
+                    font-size: 18px;
+                    top: 0;
+                    left: 0;
+                    margin: 0;
+                    padding: 0 0 12px 0;
+                }
+
+                &--content{
+                    color: #505050;
+                    font-size: 14px;
+                    margin: 0;
+                    padding: 0;
+                    
+                    }
+
+                }
+
+            .prod-title{
+                font-size: 18px;
+                color: #505050;
+                margin: 24px 0 0 0;
+
+            }
+
+    }
+
+
+}
+
+
+
+
