@@ -33,8 +33,7 @@
          border-radius: 5px;
          font-size: 14px;
          box-sizing: border-box;
-         padding: 7px 0 0 0 ;
-         
+         padding: 7px 0 0 0 ;         
 
         }
           
@@ -101,6 +100,7 @@
                 border-radius: 2px;
                 box-sizing: border-box;
                 outline: none;
+
                 }
 
         }
@@ -160,12 +160,11 @@
                     width: 24px;
                     height: 24px;
                 }
-                
-              
+                              
             }
 
             &__footer{
-                color: #266FAD;
+                color: $blue_110;
                 font-size: 9px;
                 text-decoration: underline;
                 padding: 0;
@@ -173,12 +172,9 @@
                 display: block;
                 grid-area: FOOT;
 
-            }
+            }                
 
-                
-
-        }  
-          
+        }     
 
             .delive-wrapper{
                 display: flex;
@@ -187,7 +183,7 @@
                 margin: 28px 0 0 0;
 
                 &-icon {
-                    margin: 0 0 0 0 ;
+                    margin: 0;
                     padding: 0 11px 0 0;
 
                 }
@@ -202,14 +198,14 @@
             .input-reservar{
                 width: 296.11px;
                 height: 40px;
-                background-color: #2D333A;
+                background-color: $grey_700;
                 margin: 26px 15px;
                 border-radius: 5px;
                 font-size: 20px;
                 color: #fff;
                 padding: 8px 0 8px 0;
                 box-sizing: border-box;
-                border: 1px solid #2D333A;
+                border: 1px solid $grey_700;
                 
 
             }
@@ -225,7 +221,7 @@
 
 
                 &--header{
-                    color: #505050;
+                    color: $grey_600;
                     font-size: 18px;
                     margin: 0;
                     padding: 0 0 12px 0;
@@ -244,7 +240,7 @@
 
                     &--title{
                         font-size: 12px;
-                        color: #777777;
+                        color: $grey_400;
                         text-align: start;
                         margin: 0;
                         box-sizing: border-box;
@@ -254,7 +250,7 @@
 
                     &--main{
                         font-size: 14px;
-                        color: #505050;
+                        color: $grey_600;
                         box-sizing: border-box;
 
                     }
@@ -270,7 +266,7 @@
                 margin: 24px 0 0 0;
 
                 &--header{
-                    color: #505050;
+                    color: $grey_600;
                     font-size: 18px;
                     top: 0;
                     left: 0;
@@ -279,7 +275,7 @@
                 }
 
                 &--content{
-                    color: #505050;
+                    color: $grey_600;
                     font-size: 14px;
                     margin: 0;
                     padding: 0;
@@ -290,10 +286,12 @@
 
             .prod-title{
                 font-size: 18px;
-                color: #505050;
+                color: $grey_600;
                 margin: 24px 0 0 0;
 
             }
+
+        
 
     }
 
