@@ -39,29 +39,49 @@ const ElementItem = ({ list = []}) => {
             type="color"/>
           </label>
           <div className="media-conteiner">
+            <h5 className="media-conteiner__title">Medios de Pago</h5>
+            <img  className="media-conteiner--pocket" 
+                src="./icon/mask-grup1.svg"/> 
             <div className="media-conteiner__cards">
-             <h5 className="media-conteiner__title">Medios de Pago</h5>         
-               <img  className="media-conteiner__cards--pocket" 
-                src="./icon/mask-grup1.svg"/>            
                 <img  className="media-conteiner__cards--el1" 
                 src="./icon/visa.png"/>             
                 <img  className="media-conteiner__cards--el2" 
                 src="./icon/mastercard.png" />             
-                <img  className="media-conteiner__cards--el2"
+                <img  className="media-conteiner__cards--el3"
                  src="./icon/american.png" />  
-                  <br />
-              <a className="media-conteiner__cards__footer">
+                  <br />           
+            </div> 
+            <a className="media-conteiner__footer">
                 Mas informacion
-              </a>
-            </div>
-           </div>
-           <div className="delive-wrapper">
-              <img className="delive-wrapper-icon" src="./icon/local_shipping-24px.svg" />
-              <div className="delive-wrapper-text">Entrega a acorde con el vendedor</div>
-           </div>
+            </a>
+          </div>
+          <div className="delive-wrapper">
+            <img className="delive-wrapper-icon" src="./icon/local_shipping-24px.svg" />
+            <div className="delive-wrapper-text">Entrega a acorde con el vendedor</div>
+          </div>
            <input className="input-reservar" type="submit" value="Reservar"/>
            <div className="caracteristicas-wrapper">
              <h5 className="caracteristicas-wrapper--header">Caracteristicas</h5>
+              <div className="caracteristicas-wrapper__content">
+                <h6 className="caracteristicas-wrapper__content--title" >Marca</h6>
+                <div className="caracteristicas-wrapper__content--main">Fiting Shop
+                  </div>                
+              </div>
+              <div className="caracteristicas-wrapper__content">
+                <h6 className="caracteristicas-wrapper__content--title" >Linia</h6>
+                <div className="caracteristicas-wrapper__content--main">Tubo 
+                  </div>                
+              </div>
+              <div className="caracteristicas-wrapper__content">
+                <h6 className="caracteristicas-wrapper__content--title" >Modelo</h6>
+                <div className="caracteristicas-wrapper__content--main">Canilla Monocomando Alta
+                  </div>                
+              </div>
+              <div className="caracteristicas-wrapper__content">
+                <h6 className="caracteristicas-wrapper__content--title" >Forma</h6>
+                <div className="caracteristicas-wrapper__content--main">Redonda
+                  </div>                
+              </div>
            </div>
            <div className="descripcion-wrapper">
              <h5 className="descripcion-wrapper--header">Descripción</h5>

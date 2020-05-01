@@ -57,7 +57,7 @@
         }
 
         &__price{
-            margin: 10px 0 40px 0;
+            margin: 10px 0 27px 0;
             display: flex;
             flex-direction: row;
 
@@ -90,7 +90,7 @@
         }
 
         .label-color{
-            padding: 0 0 0 24px;
+            padding: 0 5px 0 24px;
             font-size: 14px;
             color: $grey_600;
             
@@ -106,65 +106,75 @@
         }
 
         .media-conteiner {
+            display: grid;
+            width: 216px;
+            height: 61px;
+            margin: 19px 0 0 0 ;
+            grid-template-columns: 29px 184px;
+            grid-template-areas: 
+                "POCK TITL"
+                "POCK CRD"
+                "POCK FOOT"; 
             
-              &__title{
+            &__title{
+                height: 15px;                
                 font-size: 16px;
                 font-weight: 400;
                 color: $grey_600;
-                margin: 19px 0 11px 32px;
+                grid-area: TITL;
+                margin: 0;
+                padding: 0;
             }
 
-            &__cards{
-                position: relative;
-                width: 216px;
-                height: 61px;
 
-                &--pocket{
-                    position: absolute;
-                    top: 9.83px;
-                    left: 3px;
-                    right: 196.09px;
-                    bottom: 32.5px;
+            &--pocket{
+                grid-area: POCK;
+                margin: 10px 12px 0 0;
+            }
+
+
+            &__cards{ 
+                width: 132px;
+                height: 24px;
+                margin: 8px 0 0 0;
+                grid-area: CRD;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                align-content: flex-end;
+
+                &--el1{
+                    padding: 0 13px 0 0;
+                    width: 51px;
+                    height: 16px;
                 }
 
-                &---el1{
-                    position: absolute;                    
-                    padding: 0 0 0 30px;
-                    top: 26.1px;
-                    left: 32px;
-                    right: 133px;
-                    bottom: 18.32px;
+                &--el2{
+                    padding: 0 13px 0 0;
+                    width: 30px;
+                    height: 23px;
                 }
 
+                &--el3{
+                    padding: 0 13px 0 0;
+                    width: 24px;
+                    height: 24px;
+                }
                 
+              
+            }
 
-                &---el2{
-                    position: absolute;                    
-                    top: 23.1px;
-                    left: 96.5px;
-                    right: 89.5px;
-                    bottom: 14.51px;
-
-                }
-
-                &---el3{
-                    position: absolute;                    
-                    top: 24px;
-                    left: 140px;
-                    right: 52px;
-                    bottom: 13px;
-
-                }
-
-                &__footer{
-                    color: rgb(128, 142, 155);
-                    font-size: 9px;
-                    text-decoration: underline;
-                    padding: 0;
-                    margin: -10px 0 0 0;
-                }
+            &__footer{
+                color: #266FAD;
+                font-size: 9px;
+                text-decoration: underline;
+                padding: 0;
+                margin: 0;
+                display: block;
+                grid-area: FOOT;
 
             }
+
                 
 
         }  
@@ -199,25 +209,56 @@
                 color: #fff;
                 padding: 8px 0 8px 0;
                 box-sizing: border-box;
+                border: 1px solid #2D333A;
                 
 
             }
 
             .caracteristicas-wrapper{
+                min-height: 55px;
                 width: 232px;
                 height: 151px;
-                position: relative;
                 margin: 10px 0 0 0;
+                justify-content: start;
+                flex-direction: column;
+                flex-wrap: wrap;
 
 
                 &--header{
                     color: #505050;
                     font-size: 18px;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                    margin: 0;
+                    padding: 0 0 12px 0;
+                  
+                }
+
+                &__content{
+                    width: 106px;
+                    height: 55px;
+                    display: block;
+                    float: left;
                     margin: 0;
                     padding: 0;
+                    box-sizing: border-box;
+
+
+                    &--title{
+                        font-size: 12px;
+                        color: #777777;
+                        text-align: start;
+                        margin: 0;
+                        box-sizing: border-box;
+
+
+                    }
+
+                    &--main{
+                        font-size: 14px;
+                        color: #505050;
+                        box-sizing: border-box;
+
+                    }
+
                 }
 
             }
@@ -226,6 +267,7 @@
             .descripcion-wrapper{
                 width: 327px;
                 height: 193px;
+                margin: 24px 0 0 0;
 
                 &--header{
                     color: #505050;
@@ -241,7 +283,7 @@
                     font-size: 14px;
                     margin: 0;
                     padding: 0;
-                    
+
                     }
 
                 }
