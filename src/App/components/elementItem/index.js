@@ -90,8 +90,15 @@ const ElementItem = ({ list = []}) => {
              </div>
            </div>
            <h4 className="prod-title">Otros Productos del vendedor</h4>
-           <Items  />
-                     
+           <Items />
+           <section className="ask-conteiner">
+             <h4 className="ask-conteiner--title">Preguntas</h4>
+             <div className="ask-conteiner__body">
+               <img src="./icon/support.svg" className="ask-conteiner__body--icon"/>
+               <p  className="ask-conteiner__body--content" >Que tal … viene con los flexibles?</p>
+             </div>
+             <a className="ask-conteiner--link">Preguntar</a>
+           </section>          
           </section>    
     </div>
   );

@@ -8,6 +8,7 @@ import ElementItem from '../../components/elementItem'
 import './style.scss';
 
 const Item = () => (
+  
   <Layout>
     <div className='item-content'>
       <Breadcrumbs />

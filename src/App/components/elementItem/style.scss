@@ -3,7 +3,7 @@
 .item-conteiner {
     margin: 7px 0 0 0;
     padding: 0 0 0 21px;
-    background-color: $white_100;
+    background-color: $grey_100;
     
     .slaider-conteiner{
         display: flex;
@@ -24,7 +24,7 @@
          position: absolute;
          bottom: 0;
          left: 0;
-         background-color: $grey_700;
+         background-color: $grey_200;
          width: 64px;
          height: 32px;
          color: $grey_600;
@@ -288,6 +288,47 @@
                 font-size: 18px;
                 color: $grey_600;
                 margin: 24px 0 0 0;
+
+            }
+
+            .ask-conteiner{
+                
+                &--title{
+                    color: $grey_600; 
+                    font-size: 18px;
+
+                }
+
+                &__body{
+                    display: grid;
+                    grid-template-columns: 16px 302px;
+                    grid-template-areas: "IC CONT";       
+                    
+                
+                    &--icon{
+                        grid-area: IC;
+
+                    }
+
+                    &--content{
+                        grid-area: CONT;
+                        color: $grey_600; 
+                        margin: 0 0 35px 7px;
+                        padding: 0;
+
+                    }
+                }
+
+                &--link{
+                   color: $blue_101;
+                   font-size: 16px;
+                   display: block;
+                   width: 70px;
+                   text-decoration: underline;
+                   margin: 0 0 0 114px;
+                   padding: 0 0 20px 0;
+
+                }
 
             }
 
