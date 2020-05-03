@@ -1,6 +1,15 @@
-.map-wrapper {    
-  .map-img { 
-    width: 100%;
-    height: auto;
+@import '../../components/layout/variables';
+@import './carousel';
+
+.home-content {    
+  .featured-product {
+    margin: 18px 8px;
+
+    &--title {
+      font-size: 18px;
+      color: $grey_555;
+      margin: 0 5px;
+      font-weight: 300;
+    }
   }
 }

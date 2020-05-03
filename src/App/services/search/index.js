@@ -17,7 +17,7 @@ class SearchServices {
         }
       }
       `
-    });
+    }).catch(err => ({error: {...err}}));
   }
 }
 

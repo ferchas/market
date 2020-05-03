@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { useHistory } from "react-router-dom";
 import searchServices from '../../services/search' ;
 import contextSearch from '../../context/search';
 import Loading from '../loading';
@@ -10,6 +10,7 @@ const SearchBox = () => {
   const [inputSearch, setInputSearch] = useState('');
   const [loading, setLoading] = useState(false);
   const { updateData } = contextSearch();
+  const history = useHistory();
 
   const handleClick = () => {
     searchProduct()
@@ -20,7 +21,6 @@ const SearchBox = () => {
   const handleKeyPress = e => { 
     if (e.which == 13 || e.keyCode == 13) {  
       searchProduct();
-      console.log(e.target);
       e.target.blur();
     }
   };
@@ -29,10 +29,13 @@ const SearchBox = () => {
     if(inputSearch != '') {
       setLoading(true);
       searchServices.finde(inputSearch).then(res => {
-        updateData({
-          searchWord: inputSearch, 
-          resultSearch: res && res.data && res.data.search || [],
-        });
+        if(!res.error) {
+          updateData({
+            searchWord: inputSearch, 
+            resultSearch: res && res.data && res.data.search || [],
+          });
+          history.push('/search');
+        }
         setLoading(false);
       });
     }
