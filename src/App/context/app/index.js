@@ -11,7 +11,7 @@ const AppProvider = ({ children }) => {
         step: 0,
       },
       search: '',
-      resultSearch: [{},{},{},{},{}],
+      resultSearch: [],
     }
   );
     

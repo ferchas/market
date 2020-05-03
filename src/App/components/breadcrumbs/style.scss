@@ -1,9 +1,11 @@
 @import '../layout/variables';
 
 .bredcrumbs-container {
-  
+  padding: 0 18px;
+
   &__links-wp {
       margin: 0;
+      font-weight: 300;
 
     &--link {
       display: inline-block;

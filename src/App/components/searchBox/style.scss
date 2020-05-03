@@ -17,17 +17,19 @@
       height: 40px;
       width: 100%;
       padding: 0;
+      font-size: 18px;
 
-      &::placeholder {
+      &:placeholder {
         color: $grey_401;
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 100;
         padding: 8px;
       }
-
-      &::focus  {
+    
+      &:focus  {
         border: 0;
         box-shadow: none;
+        outline: none;
       }
     }
 
