@@ -51,6 +51,10 @@
 
 .carousel-root {
   outline: none;
+  background: radial-gradient(
+    150px 40px at 195px bottom,
+    #666, #222
+  );
 }
 
 .carousel {
@@ -211,7 +215,7 @@
   margin: 0;
   position: relative;
   text-align: center;
-  background: #000
+  background: #fff;
 }
 
 .carousel .slide img {
@@ -228,27 +232,19 @@
 }
 
 .carousel .slide .legend {
-  -webkit-transition: all .5s ease-in-out;
-  -moz-transition: all .5s ease-in-out;
-  -ms-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
   transition: all .5s ease-in-out;
   position: absolute;
   bottom: 40px;
-  left: 50%;
-  margin-left: -45%;
-  width: 90%;
-  border-radius: 10px;
-  background: #000;
+  width: auto;
+  border-radius: 20px 0px 20px 0px;
+  margin: 0px 34px;
   color: #fff;
+  background-color: #000000a6;
   padding: 10px;
-  font-size: 12px;
+  font-size: 16px;
+  font-weight: 400;
   text-align: center;
-  opacity: 0.25;
-  -webkit-transition: opacity .35s ease-in-out;
-  -moz-transition: opacity .35s ease-in-out;
-  -ms-transition: opacity .35s ease-in-out;
-  -o-transition: opacity .35s ease-in-out;
+  opacity: 0.75;
   transition: opacity .35s ease-in-out
 }
 

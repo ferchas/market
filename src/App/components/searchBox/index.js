@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { useHistory } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import { useHistory, useLocation } from "react-router-dom";
 import searchServices from '../../services/search' ;
 import contextSearch from '../../context/search';
 import Loading from '../loading';
@@ -7,10 +7,12 @@ import Loading from '../loading';
 import './style.scss'
 
 const SearchBox = () => {
-  const [inputSearch, setInputSearch] = useState('');
+  const { hash } = useLocation();
+  const [inputSearch, setInputSearch] = useState( hash && hash.replace(/#/gi,'').replace(/%20/gi,' ') || '');
   const [loading, setLoading] = useState(false);
   const { updateData } = contextSearch();
   const history = useHistory();
+  
 
   const handleClick = () => {
     searchProduct()
@@ -34,12 +36,16 @@ const SearchBox = () => {
             searchWord: inputSearch, 
             resultSearch: res && res.data && res.data.search || [],
           });
-          history.push('/search');
+          history.push(`/search#${inputSearch}`);
         }
         setLoading(false);
       });
     }
   };
+
+  useEffect(() => {  
+    searchProduct();
+  },[]);
 
   return (
     <>

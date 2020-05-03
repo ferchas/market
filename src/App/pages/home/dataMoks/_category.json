@@ -1,0 +1,29 @@
+[
+  {
+    "src": "./img/category/illumination.jpg",
+    "label": "Iluminacion"
+  },
+  {
+    "src":"./img/category/plumbing.jpg",
+    "label": "Plomería"
+  },{
+    "src":"./img/category/garden-nurseries.jpg",
+    "label": "Jardin y Viveros"
+  },{
+    "src":"./img/category/paint-shop.jpg",
+    "label": "Pinturería"
+  },
+  {
+    "src":"./img/category/electricity.jpg",
+    "label": "Electricidad"
+  },
+  {
+    "src":"./img/category/tools.jpg",
+    "label": "Herramientas"
+  },
+  {
+    "src":"./img/category/tools.jpg",
+    "label": "Ferretería"
+  }
+  
+]

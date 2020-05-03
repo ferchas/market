@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 
 import AppContext from '../../context/app';
 
@@ -8,9 +8,9 @@ import Breadcrumbs from '../../components/breadcrumbs';
 import Filter from '../../components/filter';
 import Items from '../../components/items';
 
-const Search = () => {
+const Search = (props) => {
   const [ appState ] = useContext(AppContext);
-  console.log(appState, 'appState page search');
+
   return (
     <Layout> 
       <div className="search-container">
